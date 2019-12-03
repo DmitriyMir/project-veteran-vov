@@ -7,10 +7,14 @@ import { FormsModule } from '@angular/forms';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'my-app';
-  name: string = 'Толик';
-  age: number = 23;
-  ngOnIit() {}
+  clicks: number = 0;
+  onChanged(increased) {
+    if (increased) {
+      this.clicks = this.clicks + 1;
+    } else {
+      this.clicks = this.clicks - 1;
+    }
+  }
 }
 
 
