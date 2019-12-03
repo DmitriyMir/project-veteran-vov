@@ -8,7 +8,8 @@ import { FormsModule } from '@angular/forms';
 })
 export class AppComponent {
   title = 'my-app';
-  name = 'Толик';
+  name: string = 'Толик';
+  age: number = 23;
   ngOnIit() {}
 }
 

@@ -1,6 +1,6 @@
 <div>
     <h2>Гутен морген, {{name}}!</h2>
-    <input type="text" [value]="name">
-    <input type="text" [(ngModel)]="name" placeholder="name">    
-    <h3>Это второй компонент</h3>
+    <input type="text" [(ngModel)]="name">
+    <input type="number" [(ngModel)]="age" placeholder="name"><br><br>
+    <app-child [userName]="name" [userAge]="age"></app-child>
 </div>
