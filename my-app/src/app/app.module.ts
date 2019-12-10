@@ -5,11 +5,17 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
 import { ChildComponent } from './child/child.component';
+import { HomeComponent } from './routing/home/home.component';
+import { AboutComponent } from './routing/about/about.component';
+import { NotFoundComponent } from './routing/not-found/not-found.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ChildComponent
+    ChildComponent,
+    HomeComponent,
+    AboutComponent,
+    NotFoundComponent
   ],
   imports: [
     FormsModule,
