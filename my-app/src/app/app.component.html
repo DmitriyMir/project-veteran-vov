@@ -4,7 +4,14 @@
         <li routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
             <a routerLink="/home" >Главная</a><br>
         </li>
-        <li routerLinkActive="active"><a routerLink="/about" >О сайте</a>
+        <li routerLinkActive="active">
+            <a routerLink="/about" >О сайте</a>
+        </li>
+        <li routerLinkActive="active">
+            <a [routerLink]="['item', '5']" >Item 5</a>
+        </li>
+        <li routerLinkActive="active">
+            <a [routerLink]="['item', '8']" >Item 8</a>
         </li>
         
     </ul>
