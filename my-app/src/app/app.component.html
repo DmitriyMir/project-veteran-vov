@@ -1,4 +1,15 @@
 <div>
     <h3>МАРШРУТИЗАЦИЯ ANGULAR</h3>
+    <ul>
+        <li routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+            <a routerLink="/home" >Главная</a><br>
+        </li>
+        <li routerLinkActive="active"><a routerLink="/about" >О сайте</a>
+        </li>
+        
+    </ul>
+    <nav>
+
+    </nav>
     <router-outlet></router-outlet>
 </div>
