@@ -7,7 +7,7 @@ import { ItemComponent } from './routing/item/item.component';
 
 
 const routes: Routes = [
-  {path:"home", component: HomeComponent},
+  {path:"", component: HomeComponent},
   {path:"about", component: AboutComponent},
   {path:"item/:id", component: ItemComponent},
   {path:"**", component: NotFoundComponent}
