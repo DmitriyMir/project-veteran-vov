@@ -1,1 +1,16 @@
-<p>main works!</p>
+<div>
+    <form (ngSubmit)="MakeLogin()">
+       <input type="text" placeholder="Город" 
+       [(ngModel)]="gorod"
+       name="login"><br>
+       <input type="text" placeholder="Страна"
+       [(ngModel)]="strana"
+       name="password"><br>
+       <input type="submit" value="Добавить" (click)='do(gorod, strana)'>
+   </form>
+   <div *ngFor="let item of items">
+       Город: {{item.city}}<br>
+       Страна: {{item.country}}
+   </div>
+
+</div>

@@ -7,10 +7,20 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./main.component.css']
 })
 export class MainComponent implements OnInit {
-
+  gorod: string;
+  strana: string;
+  entered: boolean;
   constructor() { }
 
+  items = []
+  do(NewCity, NewCountry){
+    this.items.push({city: NewCity, country: NewCountry})
+  }
+
   ngOnInit() {
+    this.gorod = 'Moscow';
+    this.strana = 'Russia';
+    this.entered = false;
   }
 
 }
